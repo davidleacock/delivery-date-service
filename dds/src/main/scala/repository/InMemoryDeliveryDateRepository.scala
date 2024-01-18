@@ -18,7 +18,7 @@ class InMemoryDeliveryDateRepository extends DeliveryDateRepository {
 
   override def updateDeliveryDate(deliveryDate: DeliveryDate): IO[Unit] = {
     IO {
-      memory.updated(deliveryDate.packageId, deliveryDate)
+      memory.getOrElse(deliveryDate.packageId, deliveryDate)
     }
   }
 }

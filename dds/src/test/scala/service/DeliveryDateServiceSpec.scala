@@ -5,8 +5,6 @@ import org.scalatest.wordspec.AnyWordSpec
 
 class DeliveryDateServiceSpec extends AnyWordSpec with Matchers {
 
-
-
   "DeliveryDateService" should {
 
     "update delivery date for a valid package" in {}
@@ -18,6 +16,5 @@ class DeliveryDateServiceSpec extends AnyWordSpec with Matchers {
     "retrieve delivery date for existing package" in {}
 
     "return nothing when package does not exist" in {}
-
   }
 }
